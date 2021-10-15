@@ -553,7 +553,6 @@ a {
 
 .footer-social {
   width: 206px;
-  margin-right: 93px;
 }
 
 .footer-social > .text {
@@ -585,6 +584,10 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-form {
+  margin-left: auto;
 }
 
 .footer-form-container {
@@ -917,6 +920,10 @@ a {
   border-color: var(--accent-color);
 }
 
+.modal-checkbox:focus + .checkbox-label span {
+  outline: 1px solid #212121;
+}
+
 .modal-checkbox:checked + .checkbox-label span {
   border: none;
   background-color: var(--accent-color);
@@ -931,6 +938,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .checkbox-label span {
@@ -942,6 +950,8 @@ a {
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link {
